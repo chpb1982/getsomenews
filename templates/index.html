@@ -1,0 +1,64 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!-- Original post https://glitch.com/edit/#!/hello-flask?path=views%2Findex.html%3A1%3A0  -->
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
+<!-- jade: http://jade-lang.com/ -->
+<!-- haml: http://haml.info/tutorial.html -->
+<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Welcome to News APP!</title>
+	<!-- <meta name="description" content="A cool thing made with Glitch" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://gomix.com/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+	<link rel="stylesheet" type="text/css" href="public/style.css" </head>
+
+	<body>
+		<header>
+			<h1>
+				Fetch News based on Keywords
+			</h1>
+		</header>
+
+		<main>
+			<p class="bold">Hello There,</p>
+			<p>Key in the Keywords here:</p>
+			<form>
+				<!-- <input type="text" maxlength="100" placeholder="Keywords!" name="action" value="Keywords"/> -->
+				<input type="text" maxlength="100" placeholder="Keywords!">
+				<button type="submit">Submit</button>
+      </form>
+      <section class="keywords">
+        <ul id="keywords"></ul>
+      </section>
+    </main>
+
+   
+
+    <footer>
+      <a href="https://glitch.com">
+        Email the search results?
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/public/client.js"></script>
+  </body>
+</html>
+
